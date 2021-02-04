@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.section{
+    background-color: aqua;
+    height: 350px;
+    width: 100%;
+    margin-bottom: 5px;
+}
+.sec1{
+    background-color: blue;
+}
+.sec2{
+    background-color: brown;
+}
+li:nth-child(2n+1){
+        color: blue;
+        font-size: 50px;
+}
+ul{
+    text-align: center;
+    font-size: 40px;
+}
+ul::after {
+    content: " - Sudo Element";
+}
+label{
+    font-size: 30px;
+}
+input{
+    font-size: 30px;
+}
+input:focus {
+    background-color: yellow;
+}
+.box{
+    background-color: white;
+    height: 100px;
+    width: 100px;
+    margin-bottom: 3px;
+    margin-left: 45%;
+}
+.box1{
+    background-color: white;
+    height: 100px;
+    width: 100px;
+    margin-bottom: 3px;
+    margin-left: 45%;  
+}
+.box1:hover + .box{
+    background-color: green;
+    height: 150px;
+    width: 150px;
+    margin-left: 43%; 
+}
+.tran img{
+    height: 200px;
+    width: 300px;
+    float: left;
+}
+img:hover{
+    transform: rotate(45deg);
+}
+.overflow{
+    height: 150px;
+    width: 200px;
+    float: right;
+    border: 1px solid yellow;
+    margin-right: 120px;
+    overflow: scroll;
+}
